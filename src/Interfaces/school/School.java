@@ -1,7 +1,7 @@
-package school;
+package Interfaces.school;
 
 import static school.Data.FOR_TC_PER_WEEK;
-import static school.test.Assert.*;
+import static school.test.Assert.aAssert;
 
 public class School {
    private static final String LINE = "________________________________________________";

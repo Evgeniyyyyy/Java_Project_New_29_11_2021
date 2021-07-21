@@ -1,4 +1,4 @@
-package school;
+package Interfaces.school;
 
 public abstract class BasePerson {
     private String firstName;

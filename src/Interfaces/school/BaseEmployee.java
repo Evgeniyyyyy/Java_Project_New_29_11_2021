@@ -1,6 +1,6 @@
-package school;
+package Interfaces.school;
 
-public abstract class BaseEmployee extends BasePerson{
+public abstract class BaseEmployee extends BasePerson {
     private double salary;
     BaseEmployee(String firstName, String lastName, char gender, int age, String status) {
         super(firstName, lastName, gender, age, status);

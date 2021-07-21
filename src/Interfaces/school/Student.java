@@ -1,4 +1,4 @@
-package school;
+package Interfaces.school;
 
 public final class Student extends BasePerson {
     private int grade;
