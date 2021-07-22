@@ -1,7 +1,8 @@
 package Interfaces.school;
 
-import static school.Data.FOR_TC_PER_WEEK;
-import static school.test.Assert.aAssert;
+
+import static Interfaces.school.ISalary.FOR_TC_PER_WEEK;
+import static Interfaces.school.test.Assert.aAssert;
 
 public class School {
    private static final String LINE = "________________________________________________";
@@ -40,8 +41,12 @@ public class School {
         System.out.println(LINE);
         teacher1.printTeacher();*/
         double actualBaseSalary = teacher1.getBaseSalary();
+
         aAssert(EXPECTED_BASE_SALARY, teacher1.getBaseSalary());
         aAssert(EXPECTED_PAY_CHECK, teacher1.getSalary());
+
+        System.out.println(teacher1.getSalaryPerMonth());
+        System.out.println(teacher1.getSTaxes());
 
 
     }

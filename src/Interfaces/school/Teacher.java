@@ -2,7 +2,7 @@ package Interfaces.school;
 
 import static school.Data.*;
 
-public final class Teacher extends BaseEmployee {
+public final class Teacher extends BasePerson implements ISalary {
     private String subject;
     public int set;
     private double code;
@@ -26,10 +26,12 @@ public final class Teacher extends BaseEmployee {
         }
     }
 
+    @Override
     public double getBaseSalary(){
 
         return 2 * BASE_HOURS_SET * HOURLY_WAGE_FOR_TEACHER;
     }
+    @Override
     public double getSalaryPerMonth(){
 
         double SalaryPerMonth = getBaseSalary() * 4 + FOR_TC_PER_WEEK * 4;
