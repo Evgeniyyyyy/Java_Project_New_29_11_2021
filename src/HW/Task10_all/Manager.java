@@ -22,7 +22,7 @@ public final class Manager extends BaseEmployee{
     }*/
 
     @Override
-    public int getSalary(Month[] monthArray) {
+    public int getSalary(IMonth[] monthArray) {
        int result = super.getSalary(monthArray);
        result += result * (getNumberWorkers() / 100.0);
 

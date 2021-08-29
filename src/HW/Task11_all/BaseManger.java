@@ -1,6 +1,6 @@
 package HW.Task11_all;
 
-public abstract class BaseManger extends Worker{
+public abstract class BaseManger extends Worker implements IManager{
     private int numberOfSubordinates;
 
     public BaseManger(int baseSalary, String name, int salary, int numberOfSubordinates) {

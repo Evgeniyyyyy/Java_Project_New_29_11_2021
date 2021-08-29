@@ -46,11 +46,11 @@ public abstract class BaseEmployee {
         return salary;
     }
 
-    public int getSalary(Month[] monthArray)
+    public int getSalary(IMonth[] monthArray)
 
         {int result = 0;
         for (int i = 0; i < monthArray.length; i++) {
-            result += monthArray[i].workDays * this.getSalary();
+            result += monthArray[i].getWorkDays() * this.getSalary();
 
         }
         return result;

@@ -2,13 +2,15 @@ package HW.Task10_all;
 
 public class Main {
     public static void main(String[] Args) {
-        Month[] months = MonthUtils.getQ1();
+
+
+        IMonth[] months = MonthUtils.getQ1();
         months[0] = null;
 
         Employee employee = new Employee("Bob", 27, 'M', 10);
 
         System.out.println("Sum Q1 salary: " + employee.getSalary(MonthUtils.Q1));
-        System.out.println("Sum one month salary: " + employee.getSalary(new Month[]{MonthUtils.MAR}));
+        System.out.println("Sum one month salary: " + employee.getSalary(new IMonth[]{MonthUtils.MAR}));
         System.out.println("______________________________________________________________");
 
         Manager manager = new Manager("Rambo", 30, 'M', 100, 10);

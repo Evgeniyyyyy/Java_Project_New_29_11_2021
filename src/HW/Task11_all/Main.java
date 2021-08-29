@@ -2,13 +2,13 @@ package HW.Task11_all;
 
 public class Main {
     public static void main(String[] args) {
-               /*Manager manager1 = new Manager(100, "Bob", 10);
-        Director director = new Director(100, "Rob", 10);
-        Employee employee = new Employee(100, "Lob");
+               Manager manager1 = new Manager(100, "Bob", 10, 5);
+        Director director = new Director(100, "Rob", 10, 3);
+       // IEmployee employee = new IEmployee(100, "Lob", "test");
         System.out.println("Manager: $" + manager1.getSalary());
         System.out.println("Director: $" + director.getSalary());
 
-        Employee[] employeeArray = new Employee[]{employee, manager1, director};*/
+     //   IEmployee[] employeeArray = new IEmployee[]{employee, manager1, director};
  /*       Manager manager1 = new Manager(100, "Jo", 10, 20);
         Manager manager2 = new Manager(100, "Kevin", 8, 10);
         Manager manager3 = new Manager(100, "Elvis", 3, 30);*/

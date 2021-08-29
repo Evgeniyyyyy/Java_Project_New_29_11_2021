@@ -4,18 +4,10 @@ import java.util.Objects;
 
 public class Utils {
     /*Необходимо создать утилитарный класс со следующими методами:
-
-
-
-
-
-
-
-
     поиск наименьшей надбавки (разнице между базовой ставки и зарплатой) в массиве менеджеров*/
 
     //поиск сотрудника в массиве по его имени
-    public static Employee findEmployee(String name, Employee[] employeeArray) {
+    public static IEmployee findEmployee(String name, IEmployee[] employeeArray) {
         for (int i = 0; i < employeeArray.length; i++) {
             if (Objects.equals(name, employeeArray[i].getName()))
                 return employeeArray[i];
@@ -25,7 +17,7 @@ public class Utils {
     }
 
     //поиск сотрудника в массиве по вхождению указанной строки в его имени
-    public static Employee findNameEmployee(String name, Employee[] employeeArray) {
+    public static IEmployee findNameEmployee(String name, IEmployee[] employeeArray) {
         for (int i = 0; i < employeeArray.length; i++) {
             if (employeeArray[i].getName().contains(name))
                 return employeeArray[i];
@@ -36,7 +28,7 @@ public class Utils {
     }
 
     //подсчет зарплатного бюджета для всех сотрудников в массиве
-    public static int commonSalaryMembers(Employee[] employeeArray) {
+    public static int commonSalaryMembers(IEmployee[] employeeArray) {
         int result = 0;
         for (int i = 0; i < employeeArray.length; i++) {
             result += employeeArray[i].getSalary1();
@@ -46,7 +38,7 @@ public class Utils {
     }
 
     //поиск наименьшей зарплаты в массиве
-    public static int searchMinSalary(Employee[] employees) {
+    public static int searchMinSalary(IEmployee[] employees) {
         int minValue = Integer.MAX_VALUE;
 
         for (int i = 0; i < employees.length; i++) {
@@ -60,7 +52,7 @@ public class Utils {
     }
 
     //поиск наибольшей зарплаты в массиве
-    public static int searchMaxSalary(Employee[] employees) {
+    public static int searchMaxSalary(IEmployee[] employees) {
         int minValue = Integer.MIN_VALUE;
 
         for (int i = 0; i < employees.length; i++) {
