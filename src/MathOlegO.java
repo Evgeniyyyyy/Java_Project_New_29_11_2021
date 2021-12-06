@@ -22,6 +22,7 @@ public class MathOlegO {
             return result;
 
         }
+
     }
     //сотрировка слов в List<>
 

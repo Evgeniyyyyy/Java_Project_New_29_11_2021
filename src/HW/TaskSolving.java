@@ -10,6 +10,8 @@ public class TaskSolving {
         System.out.printf("%.3f", a / b);
 
 
+
+
             //    System.out.println( a + c + f + "\n" + a + c + b + f + "\n" +  c + a + f + b );
 //        System.out.println( a + c + b + f );
 //        System.out.println( c + a + f + b );
